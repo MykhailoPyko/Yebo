@@ -1,0 +1,726 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+body {
+  font-family: lato;
+  font-size: 16px;
+  line-height: 30px;
+  color: #848789;
+}
+.header {
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg_2.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo {
+  background-image: none;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav__links {
+  margin: 0 auto;
+  padding-top: 30px;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav__link {
+  color: #4d4959;
+  padding: 7px 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background-image: linear-gradient(#1e1e1eaf, #1e1e1eaf);
+  background-repeat: no-repeat;
+  transition: background-size 0.5s, color 0.5s;
+  background-position: 50% 0%;
+  background-size: 100% 0%;
+}
+
+.nav__logo {
+  margin: 0 10px;
+}
+.toggle {
+  width: 100%;
+  padding: 20px 30px;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+.content,
+.content__about {
+  min-height: 469px;
+  background-color: #f7f7f7;
+}
+.content__container {
+  max-width: 1070px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 117px 50px 0;
+}
+.title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+}
+.content__logo {
+  margin-bottom: 34px;
+}
+.content__title {
+  margin-bottom: 35px;
+}
+.vintage {
+  min-height: 600px;
+  display: flex;
+}
+.vintage__left {
+  width: 66.667%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg_4.png);
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vintage__logo {
+  height: 100%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/logo_76.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120px;
+}
+.vintage__rigth {
+  width: 33.333%;
+  display: flex;
+  flex-direction: column;
+}
+.vintage__content {
+  height: 70%;
+  text-align: center;
+  padding: 67px 50px;
+}
+.vintage__title {
+  margin-bottom: 25px;
+}
+.vintage__content_logo {
+  margin-bottom: 45px;
+}
+.vintage__text {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.vintage__rigth_img {
+  background-image: url(https://mykhailopyko.github.io/yebo/images/img1.png);
+  width: 100%;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boriosa {
+  min-height: 600px;
+  display: flex;
+}
+.boriosa__right {
+  width: 66.667%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg_5.png);
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boriosa__logo {
+  height: 100%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/logo_83.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+.boriosa__left {
+  width: 33.333%;
+  display: flex;
+  flex-direction: column;
+}
+.boriosa__content {
+  height: 70%;
+  text-align: center;
+  padding: 67px 50px;
+}
+.boriosa__title {
+  margin-bottom: 25px;
+}
+.boriosa__content_logo {
+  margin-bottom: 45px;
+}
+.boriosa__text {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.boriosa__left_img {
+  background-image: url(https://mykhailopyko.github.io/yebo/images/img2.png);
+  width: 100%;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hulot {
+  min-height: 533px;
+  height: 70%;
+  display: flex;
+}
+.hulot__left {
+  width: 33.333%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg_6.png);
+  min-height: 533px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hulot__middle {
+  width: 33.333%;
+}
+.hulot__right {
+  width: 33.333%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg_7.png);
+  min-height: 533px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hulot__logo {
+  height: 100%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/logo_114.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170px;
+}
+.hulot__content {
+  text-align: center;
+  height: 70%;
+  padding: 30px 40px;
+}
+.hulot__title {
+  margin-bottom: 25px;
+}
+.hulot__content_logo {
+  margin-bottom: 35px;
+}
+.hulot__text {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.hulot__middle_img {
+  background-image: url(https://mykhailopyko.github.io/yebo/images/img3.png);
+  width: 100%;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo {
+  display: flex;
+  min-height: 534px;
+  position: relative;
+  text-align: center;
+}
+.photo__left {
+  width: 33.333%;
+  display: flex;
+  flex-direction: column;
+}
+.photo__left_up {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.photo__left_up_left {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__left_up_right {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__left_down {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__middle {
+  width: 33.333%;
+  display: flex;
+}
+.photo__middle_left {
+  width: 50%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__middle_right {
+  width: 50%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg12.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__right {
+  width: 33.333%;
+  display: flex;
+  flex-direction: column;
+}
+.photo__right_up {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg13.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__right_down {
+  display: flex;
+  height: 50%;
+}
+.photo__right_down_left {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__right_down_right {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://mykhailopyko.github.io/yebo/images/bg15.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo__left_up_left .text,
+.photo__left_up_right .text,
+.photo__left_down .text,
+.photo__right_up .text,
+.photo__right_down_left .text,
+.photo__right_down_right .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  padding: 100px 0;
+  background-color: rgba(100, 194, 158, 0.6);
+  color: #fff;
+  font-family: Courier New, monospace;
+}
+.photo__middle_left .text,
+.photo__middle_right .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  padding: 230px 0;
+  background-color: rgba(100, 194, 158, 0.6);
+  color: #fff;
+  font-family: Courier New, monospace;
+}
+@media (min-width: 768px) {
+  .photo__left_up_left:hover .text,
+  .photo__left_up_right:hover .text,
+  .photo__left_down:hover .text,
+  .photo__middle_left:hover .text,
+  .photo__middle_right:hover .text,
+  .photo__right_up:hover .text,
+  .photo__right_down_left:hover .text,
+  .photo__right_down_right:hover .text {
+    opacity: 1;
+  }
+  .discover__button:hover {
+    background-size: 100% 100%;
+    color: #1e1e1eaf;
+  }
+  .nav__link:hover {
+    background-size: 100% 100%;
+    color: #fff;
+  }
+}
+
+.discover {
+  height: 200px;
+  background-color: #282f35;
+  padding: 15px;
+}
+
+.discover__button {
+  display: block;
+  padding: 7px;
+  margin: 60px auto;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  transition: background-size 0.5s, color 0.5s;
+  background-position: 50% 0%;
+  background-size: 100% 0%;
+}
+
+.contact {
+  height: 462px;
+  padding: 1px;
+}
+.contact__container {
+  text-align: center;
+  margin: 90px auto;
+  max-width: 535px;
+}
+.contact__container h2 {
+  margin: 35px 0 23px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+}
+.contact__container form {
+  margin: 0 10px;
+  max-width: 535px;
+  display: flex;
+}
+.contact__container input {
+  width: 75%;
+  padding: 25px;
+  border: 1px solid #848789;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+}
+.contact__container button {
+  margin-left: 10px;
+  width: 25%;
+  background-color: #64c29e;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+footer {
+  min-height: 250px;
+  background-color: #f7f7f7;
+  padding: 1px;
+}
+.footer__container {
+  margin: 80px auto;
+  padding: 0 20px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links img {
+  height: 40px;
+  margin: 10px;
+}
+
+/* media 1200px */
+@media (max-width: 1200px) {
+  .vintage__content {
+    line-height: 27px;
+    padding: 35px 25px;
+  }
+  .vintage__title {
+    margin-bottom: 10px;
+  }
+  .vintage__content_logo {
+    margin-bottom: 30px;
+  }
+  .vintage__text {
+    margin-bottom: 20px;
+  }
+  .boriosa__content {
+    padding: 35px 25px;
+    line-height: 27px;
+  }
+  .boriosa__title {
+    margin-bottom: 10px;
+  }
+  .boriosa__content_logo {
+    margin-bottom: 30px;
+  }
+  .hulot__content {
+    padding: 24px 13px;
+    line-height: 25px;
+  }
+  .hulot__content_logo {
+    margin-bottom: 17px;
+  }
+  .hulot__title {
+    margin: 10px;
+  }
+}
+
+/* media 768px */
+@media (max-width: 768px) {
+  .header {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://mykhailopyko.github.io/yebo/images/bg_3.jpeg);
+  }
+  .toggle {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .header__logo {
+    background-image: url(https://mykhailopyko.github.io/yebo/images/logo_52.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130px;
+  }
+  .nav__links {
+    padding-top: 70px;
+    width: 100%;
+    display: none;
+  }
+  .nav__logo {
+    display: none;
+  }
+  .nav__links li {
+    display: block;
+    text-align: center;
+  }
+
+  .nav__links li:nth-child(1)::after,
+  .nav__links li:nth-child(2)::after,
+  .nav__links li:nth-child(4)::after,
+  .nav__links li:nth-child(5)::after {
+    display: block;
+    margin: 30px auto;
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .nav__link {
+    color: #fff;
+    font-size: 24px;
+  }
+  .active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 30px;
+  }
+
+  .content__container {
+    padding: 70px 40px;
+  }
+  .vintage {
+    flex-direction: column;
+  }
+  .vintage__content {
+    padding: 40px 40px;
+  }
+  .vintage__left {
+    height: 400px;
+    width: 100%;
+  }
+  .vintage__rigth {
+    height: 500px;
+    width: 100%;
+  }
+  .vintage__title {
+    margin-bottom: 20px;
+  }
+  .vintage__content_logo {
+    margin-bottom: 25px;
+  }
+  .vintage__text {
+    margin-bottom: 50px;
+  }
+  .boriosa {
+    flex-direction: column;
+  }
+  .boriosa__content {
+    padding: 40px 40px;
+  }
+  .boriosa__right {
+    height: 400px;
+    width: 100%;
+  }
+  .boriosa__left {
+    height: 500px;
+    width: 100%;
+  }
+  .boriosa__title {
+    margin-bottom: 20px;
+  }
+  .boriosa__content_logo {
+    margin-bottom: 25px;
+  }
+  .boriosa__text {
+    margin-bottom: 50px;
+  }
+  .hulot {
+    flex-direction: column;
+  }
+  .hulot__left,
+  .hulot__middle,
+  .hulot__right {
+    width: 100%;
+  }
+  .hulot__content {
+    padding: 40px 40px;
+  }
+  .content__about {
+    min-height: 350px;
+  }
+  .photo {
+    flex-direction: column;
+  }
+  .photo__left,
+  .photo__middle,
+  .photo__right {
+    width: 100%;
+    height: 534px;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+}
+
+/* media 480px */
+
+@media (max-width: 480px) {
+  .vintage__content {
+    padding: 30px 20px;
+  }
+  .vintage__title {
+    margin-bottom: 10px;
+  }
+  .vintage__content_logo {
+    margin-bottom: 20px;
+  }
+  .vintage__text {
+    margin-bottom: 10px;
+  }
+  .boriosa__content {
+    padding: 30px 20px;
+  }
+  .boriosa__title {
+    margin-bottom: 10px;
+  }
+  .boriosa__content_logo {
+    margin-bottom: 20px;
+  }
+  .boriosa__text {
+    margin-bottom: 10px;
+  }
+}
